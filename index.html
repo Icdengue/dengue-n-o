@@ -1,9 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Meu Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dengue Não!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://img.freepik.com/fotos-premium/textura-de-tecido-de-corduroy-azul-escuro-usada-como-fundo-tecido-de-panne-cor-esmeralda-fundo-de-material-textil-macio-e-liso-tecido-veludo-ranhuras-luxuoso-tom-marinho-para-seda-x9_661047-7718.jpg?semt=ais_hybrid&w=740') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 40px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #007a33;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 50px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #007a33;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #004d1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Botão flutuante WhatsApp */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .whatsapp-btn img {
+      width: auto;
+      height: 30px; /* Corrige o achatamento */
+    }
+
+    /* Botão flutuante Instagram */
+    .instagram-btn {
+      position: fixed;
+      bottom: 120px;
+      right: 20px;
+      background: none;
+      padding: 15px 17px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .instagram-btn img {
+      width: auto;
+      height: 30px; /* Corrige o achatamento */
+    }
+
+    /* Botão Voltar ao Topo */
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      background-color: #007a33;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Estilos Responsivos */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1em;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .whatsapp-btn, .instagram-btn, .back-to-top {
+        padding: 12px 15px;
+        font-size: 18px;
+      }
+
+      .instagram-btn img {
+        width: 35px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 0.9em;
+      }
+
+      .whatsapp-btn, .instagram-btn, .back-to-top {
+        padding: 10px 12px;
+        font-size: 16px;
+      }
+
+      .instagram-btn img {
+        width: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
+  <header>
+    <h1>Dengue Não!</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre a Dengue</a>
+    <a href="#Aedes Aegypti">Sobre o mosquito "Aedes Aegypti"</a>
+    <a href="#prevencao">Prevenção</a>
+    <a href="#ajuda">O que fazer</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>O que é a Dengue?</h2>
+      <p>A dengue é uma infecção viral transmitida pela picada do mosquito Aedes aegypti. Os sintomas incluem <strong> febre alta, dores no corpo, dor atrás dos olhos e </strong> <strong> manchas vermelhas.</strong></p>
+      <img src="https://img.freepik.com/fotos-gratis/mosquito-de-perto-na-natureza_23-2151365407.jpg?semt=ais_hybrid&w=740">
+    </section>
+    <section id="Aedes Aegypti">
+        <h2>O que é o Aedes aegypti?</h2>
+        <p>
+          O <strong>Aedes aegypti</strong> é um mosquito de origem africana, que se adaptou muito bem ao ambiente urbano brasileiro. Ele é conhecido principalmente por ser o vetor de doenças como <strong>dengue</strong>, <strong>zika vírus</strong>, <strong>chikungunya</strong> e <strong>febre amarela urbana</strong>.
+        </p>
+        <p>
+          Uma das principais características do Aedes aegypti são as <strong>listras brancas</strong> no corpo e nas pernas, além de seu tamanho pequeno e comportamento agressivo. Diferente de outros mosquitos, ele costuma <strong>picar durante o dia</strong>, principalmente nas primeiras horas da manhã e no final da tarde.
+        </p>
+        <p>
+          A reprodução do Aedes ocorre em locais com água parada, como <strong>caixas d'água destampadas, pneus, garrafas, vasos de plantas, calhas entupidas</strong> e até em tampinhas de garrafa. A fêmea deposita os ovos nas paredes desses recipientes, e eles podem resistir até um ano sem água.
+        </p>
+        <p>
+          A melhor forma de evitar a proliferação do mosquito é a <strong>eliminação dos criadouros</strong>. Por isso, é fundamental inspecionar regularmente quintais, terrenos e objetos que possam acumular água.
+        </p>
+        <p>
+          O combate ao Aedes aegypti é responsabilidade de todos. <strong>Conscientização e prevenção</strong> são as principais armas contra as doenças transmitidas por esse mosquito.
+        </p>
+      </section>
+      
+    <section id="prevencao">
+      <h2>Como se prevenir</h2>
+      <ul>
+        <li>Evite água parada em vasos, pneus e garrafas.</li>
+        <li>Tampe bem caixas d'água e tonéis.</li>
+        <li>Limpe calhas e ralos regularmente.</li>
+        <li>Use repelente e instale telas nas janelas.</li>
+      </ul>
+      <img src="https://www.jornaldeuberaba.com.br/images/noticias/101732/a1ef5419b966c606017be61cb613445f.webp">
+    </section>
+
+    <section id="ajuda">
+      <h2>Suspeita de Dengue?</h2>
+      <p>Procure uma unidade de saúde se tiver sintomas. Evite tomar medicamentos como aspirina e ibuprofeno sem orientação médica, pois podem agravar a doença.</p>
+      <img src="https://futurodasaude.com.br/wp-content/uploads/2024/09/IA-nos-cuidados-medicos.jpg">
+    </section>
+  </main>
+
+  <footer>
+    <p>Contatos: Disque Saúde 136 | Vigilância Sanitária local</p>
+  </footer>
+  <!-- Botões flutuantes -->
+  <a href="https://wa.me/5511955566571" target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp">
+  </a>
+  <a href="https://www.instagram.com/icdengue" target="_blank" class="instagram-btn">
+    <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="Instagram">
+  </a>
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">↑</button>
 </body>
 </html>
